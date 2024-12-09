@@ -6,23 +6,26 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobiwave/simplefolio"
+    "url": "git+https://github.com/y-guang/zihanxu-simplefolio"
   },
   "keywords": [],
   "author": "Jacobo Martinez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cobiwave/simplefolio/issues"
+    "url": "https://github.com/y-guang/zihanxu-simplefolio/issues"
   },
-  "homepage": "https://github.com/cobiwave/simplefolio#readme",
+  "homepage": "https://y-guang.github.io/zihanxu-simplefolio",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.13.2",
     "parcel": "^2.13.2",
-    "prettier": "^2.8.1"
+    "prettier": "^2.8.1",
+    "gh-pages": "^6.0.0"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
